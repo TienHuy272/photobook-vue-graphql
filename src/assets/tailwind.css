@@ -3,3 +3,19 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.btn-blue {
+  @apply bg-blue-500;
+  color: white;
+  font: bold;
+  border-radius: 10px;
+  width: 180px;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+.btn-blue:focus {
+  @apply outline-none;
+}
