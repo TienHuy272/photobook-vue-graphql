@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyphotobookyt-dev-91820-authRole",
+      "UnauthRoleArn": "arn:aws:iam::355252742146:role/amplify-amplifyphotobookyt-dev-91820-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::355252742146:role/amplify-amplifyphotobookyt-dev-91820-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifyphotobookyt-dev-91820-deployment",
+      "UnauthRoleName": "amplify-amplifyphotobookyt-dev-91820-unauthRole",
+      "StackName": "amplify-amplifyphotobookyt-dev-91820",
+      "StackId": "arn:aws:cloudformation:us-east-2:355252742146:stack/amplify-amplifyphotobookyt-dev-91820/5b0a0560-a4a3-11eb-87a5-0a0a9a5b5dba",
+      "AmplifyAppId": "d2nmrhlodvpbcv"
+    }
+  }
+}
