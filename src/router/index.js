@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import SignUpPage from '../views/SignUpPage.vue';
 import AlbumsPage from '../views/AlbumsPage.vue';
 import AlbumDetailPage from '../views/AlbumDetailPage.vue';
+import { Auth } from 'aws-amplify';
 Vue.use(VueRouter);
 
 const routes = [
@@ -44,4 +45,13 @@ const router = new VueRouter({
   routes,
 });
 
+router.beforeEach(async (to, from, next) => {
+  const requiresAuth = to.matched.some((record) => record.meta.requiresAuth);
+  const isAuthenticated = await Auth.currentUserInfo();
+  if (requiresAuth && !isAuthenticated) {
+    next('/');
+  } else {
+    next();
+  }
+});
 export default router;

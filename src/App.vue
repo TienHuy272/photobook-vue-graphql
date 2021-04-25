@@ -10,8 +10,15 @@
 </template>
 <script>
 import Nav from "./components/Nav";
+import { mapActions } from "vuex";
 export default {
   components: { Nav },
+  methods: {
+    ...mapActions("auth", ["authAction"]),
+  },
+  mounted() {
+    this.authAction();
+  },
 };
 </script>
 
